@@ -13,9 +13,13 @@
 		213C0AD91C28EBA600442E11 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 213C0AD71C28EBA600442E11 /* Main.storyboard */; };
 		213C0ADB1C28EBA600442E11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 213C0ADA1C28EBA600442E11 /* Assets.xcassets */; };
 		213C0ADE1C28EBA600442E11 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 213C0ADC1C28EBA600442E11 /* LaunchScreen.storyboard */; };
+		213C0AE91C28F81300442E11 /* NIDropDown.m in Sources */ = {isa = PBXBuildFile; fileRef = 213C0AE81C28F81300442E11 /* NIDropDown.m */; };
+		213C0AEB1C2911AA00442E11 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 213C0AEA1C2911AA00442E11 /* Podfile */; };
+		229CAC980ED9F25B1573904C /* Pods_iTax_Calc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A52E43467196BBB34C3E5BA3 /* Pods_iTax_Calc.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		197EA57EE7E216601A2B792B /* Pods-iTax Calc.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iTax Calc.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iTax Calc/Pods-iTax Calc.debug.xcconfig"; sourceTree = "<group>"; };
 		213C0ACB1C28EBA600442E11 /* iTax Calc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iTax Calc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		213C0ACF1C28EBA600442E11 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		213C0AD11C28EBA600442E11 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +30,11 @@
 		213C0ADA1C28EBA600442E11 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		213C0ADD1C28EBA600442E11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		213C0ADF1C28EBA600442E11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		213C0AE71C28F81300442E11 /* NIDropDown.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIDropDown.h; sourceTree = "<group>"; };
+		213C0AE81C28F81300442E11 /* NIDropDown.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIDropDown.m; sourceTree = "<group>"; };
+		213C0AEA1C2911AA00442E11 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		3457F7AACBB1B50B29683C7A /* Pods-iTax Calc.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iTax Calc.release.xcconfig"; path = "Pods/Target Support Files/Pods-iTax Calc/Pods-iTax Calc.release.xcconfig"; sourceTree = "<group>"; };
+		A52E43467196BBB34C3E5BA3 /* Pods_iTax_Calc.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iTax_Calc.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				229CAC980ED9F25B1573904C /* Pods_iTax_Calc.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +54,8 @@
 			children = (
 				213C0ACD1C28EBA600442E11 /* iTax Calc */,
 				213C0ACC1C28EBA600442E11 /* Products */,
+				4A46B2C7590705FE3C293D30 /* Pods */,
+				27D14F38A10989E43606A021 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +86,45 @@
 		213C0ACE1C28EBA600442E11 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				213C0AEA1C2911AA00442E11 /* Podfile */,
+				213C0AE51C28F7FA00442E11 /* Third-Parties */,
 				213C0ACF1C28EBA600442E11 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		213C0AE51C28F7FA00442E11 /* Third-Parties */ = {
+			isa = PBXGroup;
+			children = (
+				213C0AE61C28F81300442E11 /* NIDropDown */,
+			);
+			name = "Third-Parties";
+			sourceTree = "<group>";
+		};
+		213C0AE61C28F81300442E11 /* NIDropDown */ = {
+			isa = PBXGroup;
+			children = (
+				213C0AE71C28F81300442E11 /* NIDropDown.h */,
+				213C0AE81C28F81300442E11 /* NIDropDown.m */,
+			);
+			path = NIDropDown;
+			sourceTree = "<group>";
+		};
+		27D14F38A10989E43606A021 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A52E43467196BBB34C3E5BA3 /* Pods_iTax_Calc.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4A46B2C7590705FE3C293D30 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				197EA57EE7E216601A2B792B /* Pods-iTax Calc.debug.xcconfig */,
+				3457F7AACBB1B50B29683C7A /* Pods-iTax Calc.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,9 +134,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 213C0AE21C28EBA600442E11 /* Build configuration list for PBXNativeTarget "iTax Calc" */;
 			buildPhases = (
+				7691A7FBA3962DA56A176EA4 /* Check Pods Manifest.lock */,
 				213C0AC71C28EBA600442E11 /* Sources */,
 				213C0AC81C28EBA600442E11 /* Frameworks */,
 				213C0AC91C28EBA600442E11 /* Resources */,
+				F13439E12E491A1CBEC714F4 /* Embed Pods Frameworks */,
+				41EAD33DF00C34F8B940F948 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -138,11 +189,60 @@
 			files = (
 				213C0ADE1C28EBA600442E11 /* LaunchScreen.storyboard in Resources */,
 				213C0ADB1C28EBA600442E11 /* Assets.xcassets in Resources */,
+				213C0AEB1C2911AA00442E11 /* Podfile in Resources */,
 				213C0AD91C28EBA600442E11 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		41EAD33DF00C34F8B940F948 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iTax Calc/Pods-iTax Calc-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7691A7FBA3962DA56A176EA4 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F13439E12E491A1CBEC714F4 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iTax Calc/Pods-iTax Calc-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		213C0AC71C28EBA600442E11 /* Sources */ = {
@@ -152,6 +252,7 @@
 				213C0AD61C28EBA600442E11 /* ViewController.m in Sources */,
 				213C0AD31C28EBA600442E11 /* AppDelegate.m in Sources */,
 				213C0AD01C28EBA600442E11 /* main.m in Sources */,
+				213C0AE91C28F81300442E11 /* NIDropDown.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,7 +314,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -251,7 +352,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -261,6 +362,7 @@
 		};
 		213C0AE31C28EBA600442E11 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 197EA57EE7E216601A2B792B /* Pods-iTax Calc.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "iTax Calc/Info.plist";
@@ -272,6 +374,7 @@
 		};
 		213C0AE41C28EBA600442E11 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3457F7AACBB1B50B29683C7A /* Pods-iTax Calc.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "iTax Calc/Info.plist";
@@ -300,6 +403,7 @@
 				213C0AE41C28EBA600442E11 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

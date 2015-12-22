@@ -7,8 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+@import JVFloatLabeledTextField;
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController {
+
+    __weak IBOutlet JVFloatLabeledTextField *yearField;
+}
 
 
 @end
